@@ -1,6 +1,7 @@
 
 import random
 
+# dictionary with countries and their capitals
 countries_cities = {
     "Slovenia": "Ljubljana",
     "Austria": "Vienna",
@@ -31,6 +32,7 @@ countries_cities = {
     "Sweden": "Stockholm"
 }
 
+# game logic
 def start_quiz():
     country = random.choice(list(countries_cities.keys()))
     capital = countries_cities[country]
@@ -50,6 +52,7 @@ def start_quiz():
     else:
         print("Thank you for playing!")
 
+# game call
 start_quiz()
 
 
